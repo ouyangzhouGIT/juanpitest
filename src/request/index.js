@@ -30,24 +30,24 @@ export const getProductList = id => ajax.get(baseUrl + `/index.php?ctl=goods_cla
 export const getimg = (url) => ajax.get(`/api/${url}`)
 
 export const getHome = () => {
-  return ajax.get('http://xiongmaoyouxuan.com/api/tab/1?start=0')
+  return ajax.get('//xiongmaoyouxuan.com/api/tab/1?start=0')
 }
 
 export const getCategory = () => {
-  return ajax.get('https://webservice.juanpi.com/api/getIndexNavSkip?page=1&zy_ids=p8&app_name=zhe&catname=newest_zhe')
+  return ajax.get('//webservice.juanpi.com/api/getIndexNavSkip?page=1&zy_ids=p8&app_name=zhe&catname=newest_zhe')
 }
 // 精选专场  4219  4210
 export const getHomeList = (start, itemId) => {
-  return ajax.get(`http://xiongmaoyouxuan.com/api/column/${itemId}/items?start=${start}`)
+  return ajax.get(`//xiongmaoyouxuan.com/api/column/${itemId}/items?start=${start}`)
 }
 
 // 列表页
-export const getList = (id, start = 0, sort = 0) => ajax.get(`http://www.xiongmaoyouxuan.com/api/category/${id}/items?start=${start}&sort=${sort}`)
+export const getList = (id, start = 0, sort = 0) => ajax.get(`//www.xiongmaoyouxuan.com/api/category/${id}/items?start=${start}&sort=${sort}`)
 
 // 详情
-export const getDetail = id => ajax.get(`http://www.xiongmaoyouxuan.com/api/detail?id=${id}`)
+export const getDetail = id => ajax.get(`//www.xiongmaoyouxuan.com/api/detail?id=${id}`)
 
 // 登录rap2
 export const login = (userinfo) => {
-  return ajax.post('http://rap2api.taobao.org/app/mock/166518/login', userinfo)
+  return ajax.post('//rap2api.taobao.org/app/mock/166518/login', userinfo)
 }
